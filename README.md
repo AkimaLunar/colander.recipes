@@ -1,19 +1,19 @@
 # Colander Recipes
-<hr>
+Search curated vegetarian and vegan recipes.
 
-## Tech Stack
-*HTML*
+### Tech Stack
+**HTML**
 - HTML5 Boilerplate
 
-*CSS*
+**CSS**
 - Skeleton
 - HTML5 Boilerplate
 - Sass
 
-*JavaScript*
+**JavaScript**
 - jQuery
 
-*API's*
+**API's**
 - Algolia
 - ParseHub
 - Edamam
