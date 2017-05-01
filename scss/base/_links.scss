@@ -1,6 +1,7 @@
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: $action-color;
+  transition: all $base-duration $base-timing;}
 a:hover {
-  color: #0FA0CE; }
+  color: $action-color; }

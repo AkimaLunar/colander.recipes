@@ -9,20 +9,22 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: $color-medium-grey;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
+  letter-spacing: .2rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  border-radius: $base-border-radius;
+  border: $base-border;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all $base-duration $base-timing;
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -33,27 +35,27 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: darken($color-medium-grey, 20);
+  border-color: darken($color-light-grey, 20);
   outline: 0; }
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
+.button.button--primary,
+button.button--primary,
+input[type="submit"].button--primary,
+input[type="reset"].button--primary,
+input[type="button"].button--primary {
+  color: $color-primary;
+  background-color: transparent;
+  border-color: $color-primary; }
+.button.button--primary:hover,
+button.button--primary:hover,
+input[type="submit"].button--primary:hover,
+input[type="reset"].button--primary:hover,
+input[type="button"].button--primary:hover,
+.button.button--primary:focus,
+button.button--primary:focus,
+input[type="submit"].button--primary:focus,
+input[type="reset"].button--primary:focus,
+input[type="button"].button--primary:focus {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: lighten($color-primary, 20);
+  border-color: lighten($color-primary, 20)}

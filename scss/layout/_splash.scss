@@ -1,0 +1,55 @@
+.splash {
+    &__logo {
+        position: relative;
+        margin-bottom: 2rem;
+        height: 24rem;
+
+        img {
+            position: absolute;
+            width: 110%;
+            left: -5%;
+            top: -2%;
+
+            @media screen and (min-width: $breakpoint-mobile) {
+                opacity: .25;
+            }
+        }
+    }
+
+    &__main {
+        text-align: center;
+    }
+
+    &__description {
+        color: $color-medium-grey;
+        font-family: $heading-font-family;
+        font-size: 1.8rem;
+        letter-spacing: -.05rem;
+        line-height: 1.5;
+        @media screen and (min-width: $breakpoint-mobile) {
+            color: $color-dark-grey;
+        }
+    }
+    &__form {
+        position: relative;
+    }
+    &__input {
+        width: 100%;
+        padding-right: 12rem;
+        color: $color-cherry;
+    }
+    &__button {
+        top:0;
+        right:0;
+        padding: 0;
+        position: absolute;
+        border: none;
+        width: 4.75rem;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+
+        i {
+            font-size: 1.75rem;
+        }
+    }
+}

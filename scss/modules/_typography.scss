@@ -1,0 +1,25 @@
+.heading {
+    &--1 {
+      font-family: $heading-font-family;
+    }
+    &--2 {
+      font-family: $base-font-family;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+}
+
+.font {
+
+  @each $theme, $color in $grey-colors {
+     &__color--#{$theme} {
+       color: $color;
+     }
+   }
+}
+
+%bold {
+      text-transform: uppercase;
+      font-family: $heading-font-family;
+      letter-spacing: 2px;
+}

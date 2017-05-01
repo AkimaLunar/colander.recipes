@@ -13,8 +13,8 @@
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
+  background: $color-accent;
+  color: $base-font-color;
   padding: 0.2em 0;
 }
 
@@ -28,7 +28,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: $base-border;
   padding: 0;
 }
 
@@ -57,23 +57,11 @@ video {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $color-mustard;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $color-mustard;
     text-shadow: none;
 }
-
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }

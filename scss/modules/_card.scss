@@ -1,0 +1,76 @@
+.card {
+    background: white;
+    box-shadow: $box-shadow;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    &__image {
+        background-image: url('https://i1.wp.com/c2.staticflickr.com/8/7296/27341301454_d4d01b5979_b.jpg?w=960&ssl=1');
+        height: 10rem;
+        background-size: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &__header {
+        font-size: 1.5rem;
+        color: $color-accent;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        padding: 1.5rem;
+        margin-bottom: 0;
+    }
+    &__stats {
+        border-top: $base-border;
+        border-bottom: $base-border;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    &__stat {
+        display: inline-block;
+        width: 33.3333333%;
+        float: left;
+        padding: 1.5rem 0;
+
+        &:not(:last-child) {
+            border-right: $base-border;
+            margin-right: -1px;
+        }
+        dt {
+            margin-bottom: 1rem;
+            color: $color-medium-grey;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            font-size: 1rem;
+
+            i {
+                font-size: 1.5rem;
+                vertical-align: -8%;
+                margin-right: .5rem;
+            }
+        }
+        dd {
+            margin: 0;
+            font-family: $heading-font-family;
+            font-size: 2rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        height: 3rem;
+        padding: 1rem;
+        color: #FFF;
+        background-color: lighten($color-primary, 20);
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all $base-duration $base-timing;
+    }
+}
