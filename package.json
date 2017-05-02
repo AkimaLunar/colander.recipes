@@ -1,0 +1,25 @@
+{
+  "name": "colander.recipes",
+  "version": "1.0.0",
+  "description": "jQuery single-page application",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkimaLunar/colander.recipes.git"
+  },
+  "author": "Ria Carmin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkimaLunar/colander.recipes/issues"
+  },
+  "homepage": "https://github.com/AkimaLunar/colander.recipes#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
