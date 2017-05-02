@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/AkimaLunar/colander.recipes#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "handlebars": "^4.0.8",
+    "handlebars-loader": "^1.4.0",
+    "path": "^0.12.7"
   }
 }

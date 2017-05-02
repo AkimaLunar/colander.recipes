@@ -1,5 +1,9 @@
 var $ = require("jquery");
 
+var testTemplate = require("./test.hbs");
+
+require('./plugins');
+
 $(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 20) {
@@ -9,4 +13,12 @@ $(function(){
             $('nav.navigation').removeClass('navigation--dark');
         }
     });
+
+    createHTML();
 });
+
+
+function createHTML() {
+  var petsContainer = document.getElementById("test");
+  petsContainer.innerHTML = testTemplate();
+}
