@@ -12,8 +12,11 @@ Search curated vegetarian and vegan recipes.
 
 **JavaScript**
 - jQuery
+- Handlebars.js
 
 **API's**
 - Algolia
 - ParseHub
 - Edamam
+
+and bundled together with **Webpack**.
