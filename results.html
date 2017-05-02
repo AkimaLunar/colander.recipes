@@ -47,13 +47,17 @@
         <![endif]-->
 
             <nav class="navigation">
-                <img class="navigation__logo" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
-                <form action="">
-                    <input class="navigation__input" type="text"><button class="navigation__button">search</button>
-                </form>
+                <div class="container">
+                    <div class="raw">
+                        <img class="navigation__logo" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
+                        <form class="navigation__form" action="">
+                            <input class="navigation__input" type="text" placeholder="Search for a recipe"><button class="navigation__button"><i class="fa fa-search fa-lg"></i></button>
+                        </form>
+                    </div>
+                </div>
             </nav>
 
-            <div class="container">
+            <div class="container results">
             <div class="row">
             <article class="card four columns">
                 <div class="card__image">

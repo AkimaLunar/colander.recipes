@@ -4,6 +4,11 @@
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 2rem;
+    @media screen and (min-width: $breakpoint-mobile) {
+        &.four:nth-child(3n + 1) {
+            margin-left:0;
+        }
+    }
 
     &__image {
         background-image: url('https://i1.wp.com/c2.staticflickr.com/8/7296/27341301454_d4d01b5979_b.jpg?w=960&ssl=1');
@@ -43,7 +48,7 @@
             margin-bottom: 1rem;
             color: $color-medium-grey;
             text-transform: uppercase;
-            letter-spacing: .2rem;
+            letter-spacing: .1rem;
             font-size: 1rem;
 
             i {

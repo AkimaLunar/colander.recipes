@@ -78,3 +78,21 @@ label > .label-body {
   color: $color-light-grey;
   font-weight: $font-weight-regular;
 }
+
+
+%input {
+    width: 100%;
+    color: $color-cherry;
+}
+%input-button {
+    top:0;
+    right:0;
+    padding: 0;
+    position: absolute;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    i {
+        font-size: 1.75rem;
+    }
+}

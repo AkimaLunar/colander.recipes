@@ -1,0 +1,6 @@
+.results {
+    margin-top: 6rem;
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-top: 10rem;
+    }
+}

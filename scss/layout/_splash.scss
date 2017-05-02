@@ -34,22 +34,11 @@
         position: relative;
     }
     &__input {
-        width: 100%;
+        @extend %input;
         padding-right: 12rem;
-        color: $color-cherry;
     }
     &__button {
-        top:0;
-        right:0;
-        padding: 0;
-        position: absolute;
-        border: none;
+        @extend %input-button;
         width: 4.75rem;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
-
-        i {
-            font-size: 1.75rem;
-        }
     }
 }

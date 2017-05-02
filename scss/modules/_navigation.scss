@@ -1,5 +1,50 @@
 .navigation {
-    &__logo{
-        width: 20%;
+    position: fixed;
+    padding: 1rem 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all $base-duration $base-timing;
+    &--dark {
+        background-color: white;
+        box-shadow: 0 2px 18px rgba($color-dark-grey, 0.60);
+    }
+    &__logo {
+        width: 18%;
+        padding-right: 2%;
+        float: left;
+        @media screen and (min-width: $breakpoint-mobile) {
+            width: 12%;
+            padding-right: 2%;
+        }
+    }
+
+    &__form {
+        position: relative;
+        float: right;
+        width: 80%;
+        margin-bottom: 0;
+        @media screen and (min-width: $breakpoint-mobile) {
+            width: 86%;
+            margin-top: 1rem;
+        }
+
+    }
+    &__input {
+        @extend %input;
+        padding-right: 12rem;
+        margin-bottom: 0;
+    }
+    &__button {
+        @extend %input-button;
+        width: 4.75rem;
+    }
+
+}
+
+input.navigation__input {
+    background-color: transparent;
+    &:focus {
+        background-color: white;
     }
 }
