@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -277,11 +277,11 @@ var _exception = __webpack_require__(1);
 
 var _exception2 = _interopRequireDefault(_exception);
 
-var _helpers = __webpack_require__(23);
+var _helpers = __webpack_require__(13);
 
-var _decorators = __webpack_require__(21);
+var _decorators = __webpack_require__(11);
 
-var _logger = __webpack_require__(31);
+var _logger = __webpack_require__(21);
 
 var _logger2 = _interopRequireDefault(_logger);
 
@@ -370,37 +370,16 @@ exports.logger = _logger2['default'];
 
 
 /***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* global window */
+// Create a simple path alias to allow browserify to resolve
+// the runtime on a supported path.
+module.exports = __webpack_require__(10)['default'];
 
-
-exports.__esModule = true;
-
-exports['default'] = function (Handlebars) {
-  /* istanbul ignore next */
-  var root = typeof global !== 'undefined' ? global : window,
-      $Handlebars = root.Handlebars;
-  /* istanbul ignore next */
-  Handlebars.noConflict = function () {
-    if (root.Handlebars === Handlebars) {
-      root.Handlebars = $Handlebars;
-    }
-    return Handlebars;
-  };
-};
-
-module.exports = exports['default'];
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9oYW5kbGViYXJzL25vLWNvbmZsaWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O3FCQUNlLFVBQVMsVUFBVSxFQUFFOztBQUVsQyxNQUFJLElBQUksR0FBRyxPQUFPLE1BQU0sS0FBSyxXQUFXLEdBQUcsTUFBTSxHQUFHLE1BQU07TUFDdEQsV0FBVyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7O0FBRWxDLFlBQVUsQ0FBQyxVQUFVLEdBQUcsWUFBVztBQUNqQyxRQUFJLElBQUksQ0FBQyxVQUFVLEtBQUssVUFBVSxFQUFFO0FBQ2xDLFVBQUksQ0FBQyxVQUFVLEdBQUcsV0FBVyxDQUFDO0tBQy9CO0FBQ0QsV0FBTyxVQUFVLENBQUM7R0FDbkIsQ0FBQztDQUNIIiwiZmlsZSI6Im5vLWNvbmZsaWN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZ2xvYmFsIHdpbmRvdyAqL1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oSGFuZGxlYmFycykge1xuICAvKiBpc3RhbmJ1bCBpZ25vcmUgbmV4dCAqL1xuICBsZXQgcm9vdCA9IHR5cGVvZiBnbG9iYWwgIT09ICd1bmRlZmluZWQnID8gZ2xvYmFsIDogd2luZG93LFxuICAgICAgJEhhbmRsZWJhcnMgPSByb290LkhhbmRsZWJhcnM7XG4gIC8qIGlzdGFuYnVsIGlnbm9yZSBuZXh0ICovXG4gIEhhbmRsZWJhcnMubm9Db25mbGljdCA9IGZ1bmN0aW9uKCkge1xuICAgIGlmIChyb290LkhhbmRsZWJhcnMgPT09IEhhbmRsZWJhcnMpIHtcbiAgICAgIHJvb3QuSGFuZGxlYmFycyA9ICRIYW5kbGViYXJzO1xuICAgIH1cbiAgICByZXR1cm4gSGFuZGxlYmFycztcbiAgfTtcbn1cbiJdfQ==
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // Avoid `console` errors in browsers that lack a console.
@@ -430,8 +409,36 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 7 */,
-/* 8 */
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var recipeCardTemplate = __webpack_require__(9);
+var ourRequest = new XMLHttpRequest();
+ourRequest.open('GET', 'https://raw.githubusercontent.com/AkimaLunar/colander.recipes/master/app/recipes.json');
+ourRequest.onload = function() {
+  if (ourRequest.status >= 200 && ourRequest.status < 400) {
+    var recepies = JSON.parse(ourRequest.responseText);
+    console.log(recepies);
+    recipesHTML(recepies);
+  } else {
+    console.log("We connected to the server, but it returned an error.");
+  }
+};
+
+ourRequest.onerror = function() {
+  console.log("Connection error");
+};
+
+ourRequest.send();
+
+function recipesHTML(recepies) {
+  var resultsContainer = document.getElementById("results");
+  resultsContainer.innerHTML = recipeCardTemplate(recepies);
+}
+
+/***/ }),
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10691,64 +10698,36 @@ return jQuery;
 
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports) {
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
 
-var g;
+var $ = __webpack_require__(7);
+__webpack_require__(4);
+__webpack_require__(26);
+__webpack_require__(5);
 
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
 
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
+var testTemplate = __webpack_require__(27);
+
+function testHTML() {
+  var resultsContainer = document.getElementById("test");
+  resultsContainer.innerHTML = testTemplate();
 }
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
+testHTML();
 
-module.exports = g;
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
 
+var Handlebars = __webpack_require__(3);
+function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<p>Bla</p>";
+},"useData":true});
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $ = __webpack_require__(8);
-
-var testTemplate = __webpack_require__(34);
-
-__webpack_require__(6);
-
-$(function(){
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 20) {
-            $('nav.navigation').addClass('navigation--dark');
-        }
-        else {
-            $('nav.navigation').removeClass('navigation--dark');
-        }
-    });
-
-    createHTML();
-});
-
-
-function createHTML() {
-  var petsContainer = document.getElementById("test");
-  petsContainer.innerHTML = testTemplate();
-}
-
-/***/ }),
-/* 11 */,
-/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10770,7 +10749,7 @@ var base = _interopRequireWildcard(_handlebarsBase);
 // Each of these augment the Handlebars object. No need to setup here.
 // (This is done to easily share code between commonjs and browse envs)
 
-var _handlebarsSafeString = __webpack_require__(33);
+var _handlebarsSafeString = __webpack_require__(24);
 
 var _handlebarsSafeString2 = _interopRequireDefault(_handlebarsSafeString);
 
@@ -10782,11 +10761,11 @@ var _handlebarsUtils = __webpack_require__(0);
 
 var Utils = _interopRequireWildcard(_handlebarsUtils);
 
-var _handlebarsRuntime = __webpack_require__(32);
+var _handlebarsRuntime = __webpack_require__(23);
 
 var runtime = _interopRequireWildcard(_handlebarsRuntime);
 
-var _handlebarsNoConflict = __webpack_require__(5);
+var _handlebarsNoConflict = __webpack_require__(22);
 
 var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 
@@ -10821,15 +10800,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10841,7 +10812,7 @@ exports.registerDefaultDecorators = registerDefaultDecorators;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _decoratorsInline = __webpack_require__(22);
+var _decoratorsInline = __webpack_require__(12);
 
 var _decoratorsInline2 = _interopRequireDefault(_decoratorsInline);
 
@@ -10852,7 +10823,7 @@ function registerDefaultDecorators(instance) {
 
 
 /***/ }),
-/* 22 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10888,7 +10859,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 23 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10900,31 +10871,31 @@ exports.registerDefaultHelpers = registerDefaultHelpers;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _helpersBlockHelperMissing = __webpack_require__(24);
+var _helpersBlockHelperMissing = __webpack_require__(14);
 
 var _helpersBlockHelperMissing2 = _interopRequireDefault(_helpersBlockHelperMissing);
 
-var _helpersEach = __webpack_require__(25);
+var _helpersEach = __webpack_require__(15);
 
 var _helpersEach2 = _interopRequireDefault(_helpersEach);
 
-var _helpersHelperMissing = __webpack_require__(26);
+var _helpersHelperMissing = __webpack_require__(16);
 
 var _helpersHelperMissing2 = _interopRequireDefault(_helpersHelperMissing);
 
-var _helpersIf = __webpack_require__(27);
+var _helpersIf = __webpack_require__(17);
 
 var _helpersIf2 = _interopRequireDefault(_helpersIf);
 
-var _helpersLog = __webpack_require__(28);
+var _helpersLog = __webpack_require__(18);
 
 var _helpersLog2 = _interopRequireDefault(_helpersLog);
 
-var _helpersLookup = __webpack_require__(29);
+var _helpersLookup = __webpack_require__(19);
 
 var _helpersLookup2 = _interopRequireDefault(_helpersLookup);
 
-var _helpersWith = __webpack_require__(30);
+var _helpersWith = __webpack_require__(20);
 
 var _helpersWith2 = _interopRequireDefault(_helpersWith);
 
@@ -10941,7 +10912,7 @@ function registerDefaultHelpers(instance) {
 
 
 /***/ }),
-/* 24 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10987,7 +10958,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 25 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11088,7 +11059,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 26 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11120,7 +11091,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 27 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11156,7 +11127,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 28 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11189,7 +11160,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 29 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11208,7 +11179,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 30 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11248,7 +11219,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 31 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11302,7 +11273,35 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 32 */
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/* global window */
+
+
+exports.__esModule = true;
+
+exports['default'] = function (Handlebars) {
+  /* istanbul ignore next */
+  var root = typeof global !== 'undefined' ? global : window,
+      $Handlebars = root.Handlebars;
+  /* istanbul ignore next */
+  Handlebars.noConflict = function () {
+    if (root.Handlebars === Handlebars) {
+      root.Handlebars = $Handlebars;
+    }
+    return Handlebars;
+  };
+};
+
+module.exports = exports['default'];
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9oYW5kbGViYXJzL25vLWNvbmZsaWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O3FCQUNlLFVBQVMsVUFBVSxFQUFFOztBQUVsQyxNQUFJLElBQUksR0FBRyxPQUFPLE1BQU0sS0FBSyxXQUFXLEdBQUcsTUFBTSxHQUFHLE1BQU07TUFDdEQsV0FBVyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7O0FBRWxDLFlBQVUsQ0FBQyxVQUFVLEdBQUcsWUFBVztBQUNqQyxRQUFJLElBQUksQ0FBQyxVQUFVLEtBQUssVUFBVSxFQUFFO0FBQ2xDLFVBQUksQ0FBQyxVQUFVLEdBQUcsV0FBVyxDQUFDO0tBQy9CO0FBQ0QsV0FBTyxVQUFVLENBQUM7R0FDbkIsQ0FBQztDQUNIIiwiZmlsZSI6Im5vLWNvbmZsaWN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZ2xvYmFsIHdpbmRvdyAqL1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oSGFuZGxlYmFycykge1xuICAvKiBpc3RhbmJ1bCBpZ25vcmUgbmV4dCAqL1xuICBsZXQgcm9vdCA9IHR5cGVvZiBnbG9iYWwgIT09ICd1bmRlZmluZWQnID8gZ2xvYmFsIDogd2luZG93LFxuICAgICAgJEhhbmRsZWJhcnMgPSByb290LkhhbmRsZWJhcnM7XG4gIC8qIGlzdGFuYnVsIGlnbm9yZSBuZXh0ICovXG4gIEhhbmRsZWJhcnMubm9Db25mbGljdCA9IGZ1bmN0aW9uKCkge1xuICAgIGlmIChyb290LkhhbmRsZWJhcnMgPT09IEhhbmRsZWJhcnMpIHtcbiAgICAgIHJvb3QuSGFuZGxlYmFycyA9ICRIYW5kbGViYXJzO1xuICAgIH1cbiAgICByZXR1cm4gSGFuZGxlYmFycztcbiAgfTtcbn1cbiJdfQ==
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11616,7 +11615,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 
 
 /***/ }),
-/* 33 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11638,23 +11637,58 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 25 */
+/***/ (function(module, exports) {
 
-var Handlebars = __webpack_require__(35);
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h1>I am HBS</h1>";
-},"useData":true});
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
 
 /***/ }),
-/* 35 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// Create a simple path alias to allow browserify to resolve
-// the runtime on a supported path.
-module.exports = __webpack_require__(12)['default'];
+var $ = __webpack_require__(7);
 
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 20) {
+            $('nav.navigation').addClass('navigation--dark');
+        }
+        else {
+            $('nav.navigation').removeClass('navigation--dark');
+        }
+    });
+});
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Handlebars = __webpack_require__(3);
+function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<p>HELLO I AM TEST!</p>";
+},"useData":true});
 
 /***/ })
 /******/ ]);

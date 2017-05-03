@@ -2,7 +2,7 @@
   "name": "colander.recipes",
   "version": "1.0.0",
   "description": "jQuery single-page application",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "directories": {
     "doc": "doc"
   },

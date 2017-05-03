@@ -1,24 +1,14 @@
-var $ = require("jquery");
-
-var testTemplate = require("./test.hbs");
-
+var $ = require('jquery');
 require('./plugins');
-
-$(function(){
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 20) {
-            $('nav.navigation').addClass('navigation--dark');
-        }
-        else {
-            $('nav.navigation').removeClass('navigation--dark');
-        }
-    });
-
-    createHTML();
-});
+require('./navigation');
+require('./search');
 
 
-function createHTML() {
-  var petsContainer = document.getElementById("test");
-  petsContainer.innerHTML = testTemplate();
+var testTemplate = require("./templates/test.hbs");
+
+function testHTML() {
+  var resultsContainer = document.getElementById("test");
+  resultsContainer.innerHTML = testTemplate();
 }
+
+testHTML();
