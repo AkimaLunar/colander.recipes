@@ -4,7 +4,9 @@
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 2rem;
+
     @media screen and (min-width: $breakpoint-mobile) {
+        height: 324px;
         &.four:nth-child(3n + 1) {
             margin-left:0;
         }
@@ -26,6 +28,10 @@
         letter-spacing: .2rem;
         padding: 1.5rem;
         margin-bottom: 0;
+        @media screen and (min-width: $breakpoint-mobile) {
+            display: block;
+            height: 5.5rem;
+        }
     }
     &__stats {
         border-top: $base-border;

@@ -10706,24 +10706,30 @@ __webpack_require__(4);
 __webpack_require__(26);
 __webpack_require__(5);
 
-
-var testTemplate = __webpack_require__(27);
-
-function testHTML() {
-  var resultsContainer = document.getElementById("test");
-  resultsContainer.innerHTML = testTemplate();
-}
-
-testHTML();
-
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Handlebars = __webpack_require__(3);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<p>Bla</p>";
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<article class=\"card four columns\">\n    <div class=\"card__image\" style=\"background-image: url("
+    + alias4(((helper = (helper = helpers.img || (depth0 != null ? depth0.img : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img","hash":{},"data":data}) : helper)))
+    + ");\">\n\n    </div>\n    <h2 class=\"card__header\">"
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h2>\n    <dl class=\"card__stats clearfix\">\n    <div class=\"card__stat\">\n        <dt><i class=\"fa fa-heart\" aria-hidden=\"true\"></i>Calories</dt>\n        <dd>541</dd>\n    </div>\n    <div class=\"card__stat\">\n        <dt><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i>Time</dt>\n        <dd>"
+    + alias4(((helper = (helper = helpers.ttime || (depth0 != null ? depth0.ttime : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"ttime","hash":{},"data":data}) : helper)))
+    + "</dd>\n    </div>\n    <div class=\"card__stat\">\n        <dt>Ingredients</dt>\n        <dd>11</dd>\n    </div>\n    </dl>\n    <a href=\""
+    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
+    + "\" class=\"card__link\" target=\"_blank\">on "
+    + alias4(((helper = (helper = helpers.blog || (depth0 != null ? depth0.blog : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"blog","hash":{},"data":data}) : helper)))
+    + "</a>\n</article>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.recipes : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 /***/ }),
@@ -11679,16 +11685,6 @@ $(function(){
         }
     });
 });
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Handlebars = __webpack_require__(3);
-function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<p>HELLO I AM TEST!</p>";
-},"useData":true});
 
 /***/ })
 /******/ ]);
