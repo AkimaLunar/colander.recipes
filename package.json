@@ -24,5 +24,8 @@
     "handlebars": "^4.0.8",
     "handlebars-loader": "^1.4.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
   }
 }
