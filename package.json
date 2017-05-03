@@ -7,8 +7,9 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "webpack",
-    "sass": "sass --watch scss/main.scss:css/styles.css"
+    "webpack": "webpack",
+    "sass": "sass --watch scss/main.scss:css/styles.css",
+    "serve": "http-server"
   },
   "repository": {
     "type": "git",
