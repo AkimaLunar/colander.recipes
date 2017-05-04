@@ -1,6 +1,5 @@
 var path = require("path");
 
-
 module.exports = {
   entry: "./app/app.js",
   output: {
@@ -11,11 +10,11 @@ module.exports = {
       {test: /\.hbs$/, use: "handlebars-loader"}
     ]
   },
-  // externals: {
-  //     // require("jquery") is external and available
-  //     //  on the global var $
-  //     "jquery": "$"
-  // },
+  externals: {
+      // require("jquery") is external and available
+      //  on the global var $
+      "algoliasearch": "algoliasearch"
+  },
   watch: true
 
 }
