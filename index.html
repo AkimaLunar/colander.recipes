@@ -11,21 +11,40 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Colander Recipes</p>
+            <nav class="navigation">
+                <div class="container">
+                    <div class="raw">
+                        <img class="navigation__logo" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
+                        <form class="navigation__form" action="">
+                            <input class="navigation__input" type="text" placeholder="Search for a recipe"><button class="navigation__button"><i class="fa fa-search fa-lg"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+            <div class="container results">
+                <div class="row" id="results"></div>
+            <div class="row">
+            <footer class="six columns offset-by-three">
+                <p id="test"></p>
+                <p><a href="https://github.com/AkimaLunar/colander.recipes">Mememememe!</a></p>
+            </footer>
+            </div>
+        </div>
+
+
+        <!--<script src="https://code.jquery.com/jquery-3.1.0.js"
+        integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+        crossorigin="anonymous"></script>-->
+        <script src="app.bundle.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

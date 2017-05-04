@@ -9,7 +9,8 @@
   "scripts": {
     "webpack": "webpack",
     "sass": "sass --watch scss/main.scss:css/styles.css",
-    "serve": "http-server"
+    "server": "http-server",
+    "serve": "npm run webpack && npm run sass && npm run serve"
   },
   "repository": {
     "type": "git",
