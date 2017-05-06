@@ -34,23 +34,6 @@ function navigationHTML() {
     $('.splash__form').addClass('navigation__form').removeClass('splash__form');
     $('.splash__input').addClass('navigation__input').removeClass('splash__input');
 }
-
-// Algolia factory
-// var AlgoliaClient = function(){
-//   function init(){
-//    navigationHTML();
-//   }
-//   function search(){
-//     //searchIndex function 
-//   }
-//     return { init: init, searchIndex: search } }
-//   }
-
-// var algoliaClient = new AlgoliaClient();
-
-// algoliaClient.init()
-
-
 // Search Algolia 'recipes' index
 var index = client.initIndex('recipes');
 
@@ -60,18 +43,18 @@ function searchIndex(input, resultHtml, errorHtml) {
   index.search(query, function(err, content) {
     if (content.hits.length < 1) {
       errorHtml();
+    } else {
+      resultHtml(content);
     }
-    console.log(content.hits);
-    resultHtml(content);
   });
   searchIndex = function(input, resultHtml, errorHtml) {
     var query = $(input).val();
     index.search(query, function(err, content) {
       if (content.hits.length < 1) {
         errorHtml();
+      } else {
+        resultHtml(content);
       }
-      console.log(content.hits);
-      resultHtml(content);
     });
   }
 }
