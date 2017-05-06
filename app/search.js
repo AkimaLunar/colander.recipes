@@ -1,4 +1,7 @@
+// Initiating Algolia
 var client = algoliasearch('P6BZRHYIM7', 'f1552f8453233d02a898154724697917');
+
+// Templates
 var recipeCardTemplate = require("../templates/card.hbs");
 var errorTemplate = require("../templates/error.hbs");
 var navigationLogo = (
@@ -22,7 +25,6 @@ function errorHTML() {
   console.log('nothing found');
 }
 function navigationHTML() {
-  console.log('I run');
     $('#splashHeader').remove();
     $('.splash__description').remove();
     $('.splash__main').addClass('navigation').removeClass('splash__main');
@@ -31,7 +33,7 @@ function navigationHTML() {
     $('.splash__input').addClass('navigation__input').removeClass('splash__input');
 }
 
-// Algolia Search
+// Search Algolia 'recipes' index
 var index = client.initIndex('recipes');
 
 function searchIndex(input, resultHtml, errorHtml) {
