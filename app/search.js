@@ -33,6 +33,22 @@ function navigationHTML() {
     $('.splash__input').addClass('navigation__input').removeClass('splash__input');
 }
 
+// Algolia factory
+// var AlgoliaClient = function(){
+//   function init(){
+//    navigationHTML();
+//   }
+//   function search(){
+//     //searchIndex function 
+//   }
+//     return { init: init, searchIndex: search } }
+//   }
+
+// var algoliaClient = new AlgoliaClient();
+
+// algoliaClient.init()
+
+
 // Search Algolia 'recipes' index
 var index = client.initIndex('recipes');
 
