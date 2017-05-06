@@ -21,22 +21,21 @@
 
             <nav class="navigation">
                 <div class="container">
-                    <div class="raw">
-                        <img class="navigation__logo" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
+                    <div class="row">
+                        <img class="navigation__logo navigation__inner" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
                         
                         {{> 'search.hbs'}}
                     </div>
                 </div>
             </nav>
             
-            <div class="container results">
+            <main class="container results">
                 <div class="row" id="results"></div>
-            <div class="row">
-            <footer class="six columns offset-by-three">
-                <p id="test"></p>
+            </main>
+
+            <footer class="container">
                 <p><a href="https://github.com/AkimaLunar/colander.recipes">Github Repo</a></p>
             </footer>
-            </div>
         </div>
 
 

@@ -18,6 +18,12 @@
 
     &__main {
         text-align: center;
+        width: 85%;
+        margin: 0 auto;
+        min-height: 14rem;
+        @media screen and (min-width: $breakpoint-mobile) {
+            width: 60%;
+        }
     }
 
     &__description {

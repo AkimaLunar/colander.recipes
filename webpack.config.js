@@ -36,6 +36,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'templates/index.hbs',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/splash.hbs',
+      filename: 'splash.html'
     })
   ]
 };

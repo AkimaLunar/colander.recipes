@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,32 +22,33 @@
         <!-- Add your site or application content here -->
         
   
-            <nav class="splash__logo">
-                <img src="assets/colander-recipes-logo-l.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
-            </nav>
+        <header id="splashHeader" class="splash__logo">
+            <img src="assets/colander-recipes-logo-l.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
+        </header>
 
+        <nav class="splash__main">
             <div class="container">
-            <div class="row">
-            <main class="splash__main six columns offset-by-three">
-                <p class="splash__description">Curated vegetarian and vegan recipes from the best food blogs.</p>
-                <form action="POST" class="splash__form">
-                    <input class="splash__input" type="text" placeholder="Search for a recipe">
-                    <button type="submit" class="button--primary splash__button"><i class="fa fa-search fa-lg"></i></button>
-                </form>
-            </main>
+                <div class="row">
+                    <p class="splash__description">Curated vegetarian and vegan recipes from the best food blogs.</p>
+                    {{> 'search.hbs'}}
+                </div>
             </div>
+        </nav>
+        <main class="container results">
+            <div class="row" id="results"></div>
+        </main>
 
-            <div class="row">
-            <footer class="six columns offset-by-three">
-            </footer>
-            </div>
-        </div>
+        <footer class="container">
+            <p><a href="https://github.com/AkimaLunar/colander.recipes">Github Repo</a></p>
+        </footer>
+
 
 <!--
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="scripts/plugins.js"></script>-->
-        <script src="bundle.js"></script>
+        <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+        <script src="app.bundle.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
