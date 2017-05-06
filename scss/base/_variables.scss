@@ -1,15 +1,14 @@
 // Typography
 
-// Montserrat 400, 700
-// PT Serif 400, 400italic, 700
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:300,300italic,700);
+// Montserrat 300, 600
+// Merriweather 400
 $heading-font-family: 'Merriweather', serif;
 $base-font-family: 'Montserrat', sans-serif;
 // Maybe later
 // $fa-font-path:   '../font';
 
 $font-weight-regular: 300;
-$font-weight-bold: 700;
+$font-weight-bold: 600;
 
 // Other Sizes
 $base-border-radius: 20px;
@@ -18,7 +17,7 @@ $base-border-radius: 20px;
 $breakpoint-mobile: 550px;
 
 // Theme Colors
-$color-cherry:  #f24949;
+$color-cherry:  #ff7272;
 $color-viking:  #49A6BD;
 $color-orange:  #f18847;
 $color-mustard: #fcc359;

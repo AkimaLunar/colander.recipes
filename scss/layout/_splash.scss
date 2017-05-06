@@ -14,30 +14,36 @@
                 opacity: .25;
             }
         }
+        @media screen and (min-width: $breakpoint-mobile) {
+            top: -8rem;
+        }
     }
 
     &__main {
         text-align: center;
-        width: 85%;
-        margin: 0 auto;
         min-height: 14rem;
-        @media screen and (min-width: $breakpoint-mobile) {
-            width: 60%;
-        }
     }
 
     &__description {
-        color: $color-medium-grey;
+        color: $color-cherry;
         font-family: $heading-font-family;
-        font-size: 1.8rem;
         letter-spacing: -.05rem;
         line-height: 1.5;
+        font-size: 1.8rem;
         @media screen and (min-width: $breakpoint-mobile) {
-            color: $color-dark-grey;
+            // color: $color-dark-grey;
+            font-size: 2.5rem;
+            width: 50%;
+            margin: 2rem auto;
+            margin-bottom: 4rem;
         }
     }
     &__form {
         position: relative;
+        @media screen and (min-width: $breakpoint-mobile) {
+            width: 60%;
+            margin: 0 auto;
+        }
     }
     &__input {
         @extend %input;

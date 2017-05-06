@@ -5,7 +5,9 @@ var client = algoliasearch('P6BZRHYIM7', 'f1552f8453233d02a898154724697917');
 var recipeCardTemplate = require("../templates/card.hbs");
 var errorTemplate = require("../templates/error.hbs");
 var navigationLogo = (
-  '<img class="navigation__logo navigation__inner" src="assets/colander-recipes-logo-s.svg" onerror="this.onerror=null; this.src="assets/colander-recipes-logo-l.png">'
+  '<img class="navigation__logo navigation__inner"' + 
+    'src="https://dl.dropboxusercontent.com/u/108453220/colander-recipes/colander-recipes-logo-s.svg"' +
+    'onerror="this.onerror=null; this.src="https://dl.dropboxusercontent.com/u/108453220/colander-recipes/colander-recipes-logo-s.png">'
 );
 
 // Elements

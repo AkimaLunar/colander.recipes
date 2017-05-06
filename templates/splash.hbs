@@ -10,20 +10,17 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        {{> 'css-links.hbs'}}
     </head>
     <body>
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <div class="container browserupgrade">
+            <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        </div>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        
-  
         <header id="splashHeader" class="splash__logo">
-            <img src="assets/colander-recipes-logo-l.svg" onerror="this.onerror=null; this.src='assets/colander-recipes-logo-l.png'">
+            <img src="https://dl.dropboxusercontent.com/u/108453220/colander-recipes/colander-recipes-logo-l.svg" onerror="this.onerror=null; this.src='https://dl.dropboxusercontent.com/u/108453220/colander-recipes/colander-recipes-logo-l.png'">
         </header>
 
         <nav class="splash__main">
@@ -38,21 +35,9 @@
             <div class="row" id="results"></div>
         </main>
 
-        <footer class="container">
-            <p><a href="https://github.com/AkimaLunar/colander.recipes">Github Repo</a></p>
-        </footer>
+        {{> 'footer.hbs'}}
 
         <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-        {{!--<script src="app.bundle.js"></script>--}}
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

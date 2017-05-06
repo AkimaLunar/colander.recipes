@@ -40,6 +40,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'templates/splash.hbs',
       filename: 'splash.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/404.hbs',
+      filename: '404.html'
     })
   ]
 };

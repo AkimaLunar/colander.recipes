@@ -1,0 +1,15 @@
+.footer {
+    color: $color-medium-grey;
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-top: 4rem;
+        color: $color-dark-grey;
+        text-align: center;;
+    }
+    p {
+        font-weight: $font-weight-regular;
+    }
+
+    span {
+        vertical-align: 0% !important;
+    }
+}

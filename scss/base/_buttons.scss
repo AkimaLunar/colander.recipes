@@ -12,7 +12,7 @@ input[type="button"] {
   color: $color-medium-grey;
   text-align: center;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   line-height: 38px;
   letter-spacing: .2rem;
   text-transform: uppercase;
