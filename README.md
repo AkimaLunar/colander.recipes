@@ -19,7 +19,7 @@ Search curated vegetarian and vegan recipes.
 **API's**
 - Algolia
 
-and bundled together with **Webpack**.
+…and bundled together with **Webpack**.
 
 Deployed on [Netlify](https://www.netlify.com/).
 
