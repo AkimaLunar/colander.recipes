@@ -1,4 +1,4 @@
-{"recipes": [
+[
       {
         "title": "Banana Cacao Recovery Smoothie",
         "ingr": [
@@ -20,7 +20,7 @@
         "mealtype": "breakfast",
         "dishtype": "smoothie",
         "url": "http://veganyackattack.com/2014/01/12/banana-cacao-recovery-smoothie/",
-        "blog": "Jackie of Vegan Yack Attack"
+        "blog": "Vegan Yack Attack"
     },
     {
         "title": "Minimalist Baker: Spinach and Artichoke Dip",
@@ -45,7 +45,7 @@
         "mealtype": "appetizer",
         "dishtype": "dip",
         "url": "http://veganyackattack.com/2016/05/16/minimalist-baker-spinach-and-artichoke-dip/",
-        "blog": "Dana Schultz of Minimalist Baker"
+        "blog": "Minimalist Baker"
     },
     {
         "title": "Banana Coconut Cream Crepes",
@@ -69,7 +69,7 @@
         "mealtype": "breakfast",
         "dishtype": "crepes",
         "url": "http://veganyackattack.com/2012/05/19/banana-coconut-cream-crepes/",
-        "blog": "Jackie of Vegan Yack Attack"
+        "blog": "Vegan Yack Attack"
     },
     {
         "title": "Tofu Benedict Fillo Pockets",
@@ -110,6 +110,255 @@
         "mealtype": "breakfast",
         "dishtype": "",
         "url": "http://veganyackattack.com/2017/04/15/tofu-benedict-fillo-pockets/",
-        "blog": "Jackie of Vegan Yack Attack"
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "title": "Almond-Crusted Cauliflower Bites with Avocado Ranch Dip",
+        "ingr": [
+            "1 cup heaping mashed avocado",
+            "2 tablespoons unsweetened non-dairy milk",
+            "1 tablespoon white vinegar",
+            "1 tablespoon lemon juice",
+            "1/2 teaspoon onion powder",
+            "1/2 teaspoon dried parsley",
+            "1/2 teaspoon nutritional yeast",
+            "1/4-1/2 teaspoon sea salt to taste",
+            "1/4 teaspoon garlic powder",
+            "1/4 teaspoon agave nectar",
+            "Pinch of dried dill",
+            "1 pieces large head cauliflower florets chopped into bite-sized",
+            "1/2 cup unsweetened non-dairy milk",
+            "6 tablespoons vegan mayo soy-free",
+            "1/4 cup chickpea flour",
+            "3/4 cup almond meal",
+            "1/4 cup cornmeal",
+            "1 teaspoon onion powder",
+            "1 teaspoon garlic powder",
+            "1 teaspoon sea salt",
+            "1/2 teaspoon paprika",
+            "Pinch of black pepper"
+        ],
+        "yield": "4",
+        "ttime": "45 min",
+        "img": "https://i0.wp.com/c2.staticflickr.com/8/7545/27747396020_0d634d39cb_b.jpg",
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "url": "http://veganyackattack.com/2016/07/01/almond-crusted-cauliflower-bites-with-avocado-ranch-dip/",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "title": "Artichoke Crab Cakes with Sriracha Tartar Sauce",
+        "ingr": [
+            "sriracha tartar sauce",
+            "1/2 cup vegan mayonnaise 110 g",
+            "1 tablespoons to 2 sriracha",
+            "1 tablespoon juice from a jar of capers",
+            "1 tablespoon lemon juice",
+            "artichoke crab cakes",
+            "1 cup oyster crackers or crushed saltine crackers 53 g",
+            "ounce Two 15- cans artichoke hearts rinsed and drained well, 425 g",
+            "3 to 4 scallions finely chopped, plus more for garnish",
+            "1/4 cup finely diced red bell pepper 35 g",
+            "1/4 cup corn kernels 35 g, fresh or defrosted if frozen",
+            "2 teaspoons Old Bay Seasoning",
+            "1/2 teaspoon kelp granules optional",
+            "1/2 teaspoon garlic powder",
+            "1/2 teaspoon dried parsley",
+            "1/4 cup vegan mayonnaise 55 g",
+            "Salt and black pepper to taste",
+            "Canola oil for frying"
+        ],
+        "yield": "4",
+        "ttime": "30 minutes",
+        "img": "https://i0.wp.com/farm8.staticflickr.com/7648/16884133030_685b85c7cc_b.jpg",
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "url": "http://veganyackattack.com/2015/04/07/artichoke-crab-cakes-with-sriracha-tartar-sauce/",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "title": "Buffalo Chickpea Nachos",
+        "ingr": [
+            "1- 15 oz . Can of Cooked Chickpeas Drained & Rinsed",
+            "1/4 C . Your favorite Buffalo Sauce + 3 T. divided",
+            "3 T . Vegan Mayo",
+            "2 T . Plain Vegan Yogurt",
+            "2 T . Raw Cashews Soaked for 30 mins or more",
+            "2 T . Non-Dairy Milk",
+            "1 tsp . Lemon Juice",
+            "1/2 tsp . Onion Powder",
+            "1/2 tsp . Garlic Salt",
+            "1/4 tsp . Dried Parsley",
+            "Pinch of Dried Dill",
+            "Pinch of Black Pepper",
+            "Pinch of Salt or to taste",
+            "1 1/4 C . Vegan Cheddar Shreds",
+            "1 C . Non-Dairy Milk",
+            "Pinch of Salt",
+            "1/2 C . Romaine Lettuce Sliced into Shreds",
+            "1/3 C . Celery chopped",
+            "8 oz . of Chips I used Beanfields"
+        ],
+        "yield": "4",
+        "ttime": "45 min",
+        "img": "https://i1.wp.com/farm4.staticflickr.com/3790/12141292534_8908cfe1ea_c.jpg",
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "url": "http://veganyackattack.com/2014/01/25/buffalo-chickpea-nachos/",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "http://veganyackattack.com/2017/01/26/creamy-cauliflower-pesto-dip/",
+        "title": "Creamy Cauliflower Pesto Dip",
+        "img": "https://i2.wp.com/c1.staticflickr.com/1/751/32505978316_d7449436ae_b.jpg",
+        "ttime": "45 min",
+        "yield": "6",
+        "ingr": [
+            "1/2 cup raw cashews , soaked in hot water for 15 minutes, drained",
+            "1 1/2 cups chopped cauliflower florets",
+            "1 1/2 cups chopped and peeled, yukon gold potatoes",
+            "1/2 cup chopped white onion",
+            "1/2 cup unsweetened non-dairy milk",
+            "2 tablespoons nutritional yeast",
+            "1 teaspoon onion powder",
+            "1/2 teaspoon salt , or to taste",
+            "1/8 teaspoon black pepper",
+            "1/4 cup slivered almonds , toasted",
+            "2 cups baby arugula , or a mix of arugula and spinach",
+            "1 1/2 cups fresh basil",
+            "3 tablespoons nutritional yeast",
+            "2 cloves garlic",
+            "1 tablespoon water",
+            "1 tablespoon lemon juice",
+            "1 teaspoon chickpea miso paste , white miso will also work",
+            "Salt & pepper , to taste"
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "http://veganyackattack.com/2015/03/27/creamy-quinoa-jalapeno-poppers-with-coconut-bacon/",
+        "title": "Creamy Quinoa Jalapeño Poppers with Coconut Bacon",
+        "img": "https://i2.wp.com/farm8.staticflickr.com/7627/16950890881_d3b493872e_b.jpg?w=500&ssl=1",
+        "ttime": "28 minutes",
+        "yield": "16",
+        "ingr": [
+            "1/3 cup white quinoa rinsed",
+            "3/4 cup vegetable broth",
+            "12 oz . firm Silken tofu",
+            "2 tablespoons lemon juice",
+            "1 tablespoon coconut oil",
+            "1 tablespoon coconut vinegar you can sub with a smaller amount of ACV",
+            "1 tablespoon nutritional yeast",
+            "1/2 tablespoon onion powder",
+            "1- 1 1/4 teaspoons of sea salt or to taste",
+            "in Eight 3-4 long green jalapeños cut half lengthwise with seeds/septums scooped out",
+            "2 teaspoons cornmeal",
+            "2 teaspoons nutritional yeast",
+            "1/2 cup coconut bacon"
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "http://veganyackattack.com/2017/02/13/valentines-sweet-treat-platter/",
+        "title": "Deluxe Valentine’s Sweet Treat Platter",
+        "img": "https://i0.wp.com/c1.staticflickr.com/1/702/32060711573_8b0ba52b3a_o.jpg",
+        "ttime": "30 minutes",
+        "yield": "2",
+        "ingr": [
+            "1 1/2 cups raw almonds",
+            "boiling water",
+            "1 cup fresh raspberries",
+            "1/2 cup vegan red wine (merlot, blend, pinot noir)",
+            "1 tablespoon sugar",
+            "6 tablespoons plain non-dairy yogurt",
+            "6 tablespoons unsweetened non-dairy milk",
+            "3 tablespoons maple syrup",
+            "2 teaspoons apple cider vinegar",
+            "Pinch of salt"
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "http://veganyackattack.com/2015/05/23/grilled-pineapple-salsa-with-quinoa-corn-tortilla-chips/",
+        "title": "Grilled Pineapple Salsa with Quinoa-Corn Tortilla Chips",
+        "img": "https://i0.wp.com/farm8.staticflickr.com/7728/18021861132_24bb2ef0df_b.jpg?w=500&ssl=1",
+        "ttime": "50 minutes",
+        "yield": "4",
+        "ingr": [
+            "1/2 pound fresh pineapple skinned/cored/cut into spears",
+            "1 cup tomato diced",
+            "1/4 cup red onion diced",
+            "1 jalapeno seeds and stem removed, diced",
+            "2 tablespoons lime juice",
+            "1 tablespoon fresh cilantro minced",
+            "Sea salt to taste",
+            "1 1/2 cups masa harina flour",
+            "1/2 cup quinoa flour",
+            "1/8 teaspoon sea salt",
+            "1 1/4 cups warm water",
+            "Organic Canola Oil spray",
+            "Sea salt for sprinkling"
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "dip",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "",
+        "title": "",
+        "img": "",
+        "ttime": "",
+        "yield": "",
+        "ingr": [
+            ""
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "blog": "Vegan Yack Attack"
+    },
+    {
+        "url": "http://veganyackattack.com/2014/09/17/macho-mac-and-cheese-nachos/",
+        "title": "Macho Mac and Cheese Nachos",
+        "img": "https://i1.wp.com/farm4.staticflickr.com/3921/15274807515_dcb645320c_b.jpg",
+        "ttime": "35 minutes",
+        "yield": "4",
+        "ingr": [
+            "1/2 cup hot vegetable broth",
+            "1/4 cup raw cashews",
+            "3/4 cup vegan cheddar shreds",
+            "1 tablespoon jalapeno, diced",
+            "1 teaspoon hot sauce",
+            "1 cup gluten-free macaroni or other pasta",
+            "1/2 cup black beans, cooked",
+            "1/3 cup yellow corn kernels, cooked",
+            "4-5 cups Blue Corn tortilla chips",
+            "1 cup lettuce, shredded",
+            "1/4 cup red bell peppers, diced",
+            "1/4 cup green onion, diced",
+            "2 tablespoons chopped cilantro",
+            "1/2 cup avocado, sliced",
+            "Large dollop of vegan sour cream",
+            "Large spoonful of salsa",
+            "Optional: sliced black olives",
+            "Serve with lime wedges"
+        ],
+        "cuisine": "",
+        "mealtype": "appetizer",
+        "dishtype": "",
+        "blog": "Vegan Yack Attack"
     }
-]}
+]
