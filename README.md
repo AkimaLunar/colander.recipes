@@ -1,7 +1,7 @@
 # Colander Recipes
 Search curated vegetarian and vegan recipes.
 
-!(https://dl.dropboxusercontent.com/u/108453220/colander-recipes/preview.jpg);
+![Colander Recipes preview](https://dl.dropboxusercontent.com/u/108453220/colander-recipes/preview.jpg)
 
 ### Tech Stack
 **HTML**
